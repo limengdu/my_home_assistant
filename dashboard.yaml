@@ -1,0 +1,608 @@
+title: Citric Li Home Assistant
+views:
+  - type: sections
+    title: Citric Li Home
+    path: home
+    icon: mdi:home-assistant
+    sections:
+      - cards:
+          - features:
+              - type: light-brightness
+            type: tile
+            entity: light.iot_socd01_723c_light
+            color: green
+            show_entity_picture: true
+            vertical: false
+            name: Left Ambient Light
+            icon: mdi:string-lights
+          - features:
+              - type: light-brightness
+            type: tile
+            entity: light.iot_socd01_a65c_light
+            name: Right Ambient Light
+            color: green
+            show_entity_picture: true
+            icon: mdi:string-lights
+          - type: tile
+            entity: fan.jipin_f001_2a17_fan
+            color: amber
+            name: Fan
+            show_entity_picture: false
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+            features:
+              - type: fan-speed
+              - type: fan-preset-modes
+                style: dropdown
+          - type: tile
+            entity: light.jipin_f001_2a17_indicator_light
+            name: Fan Indicator Light
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+          - type: tile
+            entity: select.remote_ir_1826277735329325058
+            name: TV Switch
+            icon: mdi:remote-tv
+            color: primary
+            features:
+              - type: select-options
+          - features:
+              - type: select-options
+            type: tile
+            entity: select.xiaomi_eanfv1_cbaa_keycodes
+            name: TV Control
+            icon: mdi:television
+            color: primary
+            show_entity_picture: false
+            layout_options:
+              grid_columns: 2
+              grid_rows: 4
+          - type: tile
+            entity: select.remote_ir_1826412961812602880
+            name: TV Box Switch
+            icon: mdi:remote-tv
+            color: accent
+            features:
+              - type: select-options
+          - type: tile
+            entity: text.xiaomi_eanfv1_cbaa_post
+            name: TV Post
+            icon: mdi:youtube-tv
+            color: primary
+          - type: tile
+            entity: number.xiaomi_eanfv1_cbaa_volume
+            name: TV Volume
+            icon: mdi:volume-medium
+            color: accent
+        title: '🛋️ Drawing Room '
+        column_span: 1
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.xiaomi_wpro2_db24_left_switch_service
+            name: Bedroom Light
+            icon: mdi:floor-lamp
+            color: green
+            layout_options:
+              grid_columns: 4
+              grid_rows: 2
+          - features:
+              - type: climate-fan-modes
+                style: dropdown
+              - type: climate-hvac-modes
+              - type: climate-swing-modes
+                style: dropdown
+              - type: target-temperature
+            type: tile
+            entity: climate.lumi_mcn02_3527_air_conditioner
+            layout_options:
+              grid_columns: 4
+              grid_rows: 5
+            name: Air Conditioner
+            icon: mdi:air-conditioner
+          - features:
+              - type: cover-open-close
+              - type: cover-position
+            type: tile
+            entity: cover.lumi_hmcn02_28d5_curtain
+            show_entity_picture: false
+            color: cyan
+            name: Curtain
+            layout_options:
+              grid_columns: 4
+              grid_rows: 3
+        column_span: 1
+        title: 🛏 Bedroom
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.xiaovv_q12_3bb6_switch_status
+            name: Camera Switch
+            layout_options:
+              grid_columns: 4
+              grid_rows: 2
+          - type: tile
+            entity: select.xiaovv_q12_3bb6_detection_sensitivity
+            name: Motion Detection Sensitivity
+            icon: mdi:case-sensitive-alt
+            color: yellow
+            features:
+              - type: select-options
+          - type: tile
+            entity: select.xiaovv_q12_3bb6_recording_mode
+            name: Recording Mode
+            icon: mdi:sd
+            color: red
+            features:
+              - type: select-options
+          - type: tile
+            entity: switch.xiaovv_q12_3bb6_motion_detection
+            name: Motion Detection
+            icon: mdi:motion-sensor
+          - type: tile
+            entity: number.xiaovv_q12_3bb6_alarm_interval
+            name: Motion Alarm Interval
+            icon: mdi:clock-time-eight
+            color: cyan
+          - type: tile
+            entity: sensor.xiaovv_q12_3bb6_status
+            name: Memory Card State
+            icon: mdi:micro-sd
+            color: pink
+          - type: tile
+            entity: sensor.xiaovv_q12_3bb6_storage_free_space
+            name: Memory Card Space
+            icon: mdi:sd
+            color: pink
+          - show_state: true
+            show_name: true
+            camera_view: auto
+            type: picture-entity
+            image: https://demo.home-assistant.io/stub_config/bedroom.png
+            entity: camera.xiaovv_q12_3bb6_camera_control
+            name: Camera Picture
+            camera_image: camera.xiaovv_q12_3bb6_camera_control
+            theme: macOS Theme
+        title: 📷 AI Camera
+        column_span: 1
+      - type: grid
+        cards:
+          - type: tile
+            entity: cover.linp_wd1lb_19aa_window_opener
+            icon: mdi:window-open-variant
+            color: light-blue
+            name: Window Opener
+            features:
+              - type: cover-open-close
+              - type: cover-position
+          - type: tile
+            entity: switch.xiaomi_wpro2_db24_right_switch_service
+            icon: mdi:ceiling-light
+            name: Verandahs Light
+            color: green
+          - type: tile
+            entity: binary_sensor.xiaomi_pir1_7074_motion_sensor
+            name: PIR Sensor
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_pir1_7074_illumination_2
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: light.xiaomi_wpro2_db24_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.mi_989865205_173001015171_scene_history
+            name: Automation Message
+            color: deep-purple
+            layout_options:
+              grid_columns: 4
+              grid_rows: 2
+        title: ☀️ Verandahs
+        column_span: 1
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_left_switch_service
+            name: Light
+            color: green
+            icon: mdi:globe-light
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_right_switch_service
+            name: Fan
+            icon: mdi:fan
+            color: amber
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_illumination
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: sensor.xiaomi_pir1_abb0_illumination_2
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_no_one_duration
+            icon: mdi:account-multiple-minus
+            color: brown
+            name: No One Duration
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_has_someone_duration
+            name: Has Someone Duration
+            icon: mdi:account-multiple-plus
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_occupancy_sensor
+            color: brown
+            icon: mdi:account-alert
+            name: mmWave Sensor State
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
+            name: PIR Sensor
+            color: brown
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: light.xiaomi_wpro2_3064_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+        title: 🚾 Washroom
+        column_span: 1
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_left_switch_service
+            name: Front Door Light
+            icon: mdi:coach-lamp
+            color: green
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_middle_switch_service
+            name: Around Light
+            icon: mdi:ceiling-light-multiple
+            color: green
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_right_switch_service
+            name: Drawing Room Light
+            icon: mdi:chandelier
+            color: green
+          - type: tile
+            entity: binary_sensor.isa_dw2hl_e225_magnet_sensor
+            name: Front Door State
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_no_one_duration
+            name: No One Duration
+            icon: mdi:account-multiple-minus
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_has_someone_duration
+            name: Has Someone Duration
+            icon: mdi:account-multiple-plus
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_occupancy_sensor
+            name: mmWave Sensor State
+            icon: mdi:account-alert
+            color: brown
+          - type: tile
+            entity: sensor.ainice_rd_555d_occupancy_sensor
+            color: brown
+            name: Dual Presence Sensor
+            icon: mdi:account
+          - type: tile
+            entity: sensor.isa_dw2hl_e225_illumination_2
+            name: Light Sensor
+            color: blue-grey
+            icon: mdi:lightbulb-on-30
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_illumination
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: light.xiaomi_wpro3_97cc_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+        title: 🚪 Front Door
+        column_span: 1
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.cuco_v3_38e7_switch
+            color: red
+            name: NAS Plug
+          - type: tile
+            entity: switch.cuco_v3_e487_switch
+            color: red
+            show_entity_picture: true
+            vertical: false
+            name: Router Plug
+          - type: tile
+            entity: switch.cuco_v3_6a98_switch
+            color: red
+            name: Refrigerator Plug
+          - type: tile
+            entity: switch.cuco_v3_04e6_switch
+            name: Desk Plug
+            color: purple
+            show_entity_picture: false
+          - type: tile
+            entity: switch.cuco_v3_bd89_switch
+            color: purple
+            show_entity_picture: true
+            vertical: false
+            name: Charge Plug
+            layout_options:
+              grid_columns: 2
+              grid_rows: 2
+          - type: tile
+            entity: switch.cuco_v3_55ef_switch
+            name: Water Heater Plug
+            color: purple
+            layout_options:
+              grid_columns: 2
+              grid_rows: 2
+        title: 🔌 Plug
+        column_span: 1
+      - type: grid
+        cards:
+          - type: tile
+            entity: sensor.xiaomi_lx06_9c00_conversation
+            name: Control Command
+            color: blue-grey
+            show_entity_picture: true
+            vertical: true
+            hide_state: false
+          - type: tile
+            entity: text.xiaomi_lx06_9c00_play_text
+            name: Play Text
+            color: amber
+          - type: tile
+            entity: switch.xiaomi_lx06_9c00_sleep_mode
+            name: Sleep Mode
+            icon: mdi:power-sleep
+            color: brown
+          - type: tile
+            entity: button.xiaomi_lx06_9c00_play_music
+            name: Play Music
+            icon: mdi:speaker
+            color: light-blue
+            show_entity_picture: true
+            vertical: false
+          - type: tile
+            entity: text.xiaomi_lx06_9c00_execute_text_directive
+            name: Execute Text
+            color: amber
+          - type: tile
+            entity: button.xiaomi_lx06_9c00_wake_up
+            name: Wake up
+            icon: ''
+            color: light-green
+          - type: tile
+            entity: button.xiaomi_lx06_9c00_stop_alarm
+            name: Stop Alarm
+            color: disabled
+            show_entity_picture: true
+            icon: mdi:clock-check
+        column_span: 1
+        title: 📢 AI Speaker
+      - type: grid
+        cards:
+          - features:
+              - type: update-actions
+                backup: ask
+            type: tile
+            entity: update.xiaomi_miot_auto_update
+            name: Mi IoT
+            color: teal
+            show_entity_picture: true
+            hide_state: false
+          - type: tile
+            entity: update.home_assistant_operating_system_update
+            name: OS
+            icon: mdi:home-assistant
+            color: red
+            show_entity_picture: true
+            features:
+              - type: update-actions
+                backup: ask
+          - features:
+              - type: update-actions
+                backup: ask
+            type: tile
+            entity: update.home_assistant_supervisor_update
+            icon: mdi:home-assistant
+            name: Supervisor
+            color: red
+            show_entity_picture: true
+          - type: tile
+            entity: update.home_assistant_core_update
+            name: Core
+            icon: mdi:home-assistant
+            color: red
+            show_entity_picture: true
+            features:
+              - type: update-actions
+                backup: ask
+        title: 🎉 Updates
+      - type: grid
+        cards:
+          - type: tile
+            entity: sensor.cuco_v3_04e6_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_04e6_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_04e6_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_bd89_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_bd89_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_bd89_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_38e7_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_38e7_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_38e7_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_55ef_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_55ef_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_55ef_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_e487_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_e487_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_e487_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.lumi_mcn02_3527_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.lumi_mcn02_3527_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.lumi_mcn02_3527_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_6a98_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_6a98_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.cuco_v3_6a98_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_pir1_abb0_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+          - type: tile
+            entity: sensor.isa_dw2hl_e225_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_pir1_7074_battery_level
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.lumi_hmcn02_28d5_battery_level
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.linp_wd1lb_19aa_battery_level
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.linp_wd1lb_19aa_charging_state
+            name: Window Opener Charging State
+            icon: mdi:battery-charging-wireless
+            color: dark-grey
+            layout_options:
+              grid_columns: 6
+              grid_rows: 1
+          - type: tile
+            entity: sensor.lumi_hmcn02_28d5_charging_state
+            color: dark-grey
+            icon: mdi:battery-charging-wireless
+            name: Curtain Charging State
+            layout_options:
+              grid_columns: 6
+              grid_rows: 1
+        title: ⚡️ Energy
+        column_span: 4
+    badges:
+      - type: entity
+        show_name: false
+        show_state: true
+        show_icon: true
+        entity: sensor.sun_next_dawn
