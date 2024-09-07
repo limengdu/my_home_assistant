@@ -331,14 +331,14 @@ views:
             color: red
             show_entity_picture: true
             vertical: false
-            name: Router Plug
+            name: WiFi Plug
           - type: tile
             entity: switch.cuco_v3_6a98_switch
             color: red
             name: Refrigerator Plug
           - type: tile
             entity: switch.cuco_v3_04e6_switch
-            name: Desk Plug
+            name: Computer Plug
             color: purple
             show_entity_picture: false
           - type: tile
@@ -447,106 +447,149 @@ views:
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 💻 Computer Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_04e6_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 💻 Computer Plug Today Cost
+            color: light-blue
           - type: tile
             entity: sensor.cuco_v3_04e6_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 💻 Computer Plug Month Cost
+            color: deep-orange
+            icon: ''
           - type: tile
             entity: sensor.cuco_v3_bd89_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 📱 Charge Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_bd89_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 📱 Charge Plug Today Cost
+            color: light-blue
           - type: tile
             entity: sensor.cuco_v3_bd89_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 📱 Charge Plug Month Cost
+            color: deep-orange
           - type: tile
             entity: sensor.cuco_v3_38e7_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 💾 NAS Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_38e7_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 💾 NAS Plug Today Cost
+            color: light-blue
           - type: tile
             entity: sensor.cuco_v3_38e7_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: 💾 NAS Plug Month Cost
+            color: deep-orange
           - type: tile
             entity: sensor.cuco_v3_55ef_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Water Heater Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_55ef_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            color: light-blue
+            name: Water Heater Plug Today Cost
           - type: tile
             entity: sensor.cuco_v3_55ef_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Water Heater Plug Month Cost
+            color: deep-orange
           - type: tile
             entity: sensor.cuco_v3_e487_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: WiFi Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_e487_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: WiFi Plug Today Cost
+            color: light-blue
           - type: tile
             entity: sensor.cuco_v3_e487_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: WiFi Plug Month Cost
+            color: deep-orange
           - type: tile
             entity: sensor.lumi_mcn02_3527_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Air Conditioner Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.lumi_mcn02_3527_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Air Conditioner Plug Today Cost
+            color: light-blue
           - type: tile
             entity: sensor.lumi_mcn02_3527_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Air Conditioner Plug Month Cost
+            color: deep-orange
           - type: tile
             entity: sensor.cuco_v3_6a98_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Refrigerator Plug Real Time Consumption
+            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_6a98_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Refrigerator Plug Today Cost
+            color: light-blue
           - type: tile
             entity: sensor.cuco_v3_6a98_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Refrigerator Plug Month Cost
+            color: deep-orange
           - type: tile
             entity: sensor.xiaomi_pir1_abb0_battery_level
             layout_options:
