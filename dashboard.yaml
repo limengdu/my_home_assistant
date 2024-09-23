@@ -110,7 +110,7 @@ views:
             entity: cover.lumi_hmcn02_28d5_curtain
             show_entity_picture: false
             color: cyan
-            name: Curtain
+            name: Curtain Assistant
             layout_options:
               grid_columns: 4
               grid_rows: 3
@@ -171,13 +171,34 @@ views:
       - type: grid
         cards:
           - type: tile
+            entity: sensor.alarm
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: picture
+            image: https://demo.home-assistant.io/stub_config/t-shirt-promo.png
+            image_entity: image.alarm_image
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+          - type: tile
+            entity: sensor.air_humidity
+          - type: tile
+            entity: sensor.temperature
+          - type: tile
+            entity: sensor.co2
+        column_span: 1
+        title: SenseCAP Watcher
+      - type: grid
+        cards:
+          - features:
+              - type: cover-open-close
+              - type: cover-position
+            type: tile
             entity: cover.linp_wd1lb_19aa_window_opener
             icon: mdi:window-open-variant
             color: light-blue
-            name: Window Opener
-            features:
-              - type: cover-open-close
-              - type: cover-position
+            name: Window Closer
           - type: tile
             entity: switch.xiaomi_wpro2_db24_right_switch_service
             icon: mdi:ceiling-light
@@ -337,10 +358,24 @@ views:
             color: red
             name: Refrigerator Plug
           - type: tile
+            entity: switch.cuco_v3_55ef_switch
+            name: Dehumidifier Plug
+            color: red
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
             entity: switch.cuco_v3_04e6_switch
             name: Computer Plug
             color: purple
             show_entity_picture: false
+          - type: tile
+            entity: switch.cuco_cp2d_72e0_switch
+            name: Water Heater Plug
+            color: purple
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
           - type: tile
             entity: switch.cuco_v3_bd89_switch
             color: purple
@@ -348,15 +383,8 @@ views:
             vertical: false
             name: Charge Plug
             layout_options:
-              grid_columns: 2
-              grid_rows: 2
-          - type: tile
-            entity: switch.cuco_v3_55ef_switch
-            name: Water Heater Plug
-            color: purple
-            layout_options:
-              grid_columns: 2
-              grid_rows: 2
+              grid_columns: 4
+              grid_rows: 1
         title: 🔌 Plug
         column_span: 1
       - type: grid
@@ -511,7 +539,7 @@ views:
             layout_options:
               grid_columns: 4
               grid_rows: 1
-            name: Water Heater Plug Real Time Consumption
+            name: Dehumidifier Plug Real Time Consumption
             color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_55ef_power_cost_today
@@ -519,13 +547,13 @@ views:
               grid_columns: 4
               grid_rows: 1
             color: light-blue
-            name: Water Heater Plug Today Cost
+            name: Dehumidifier Plug Today Cost
           - type: tile
             entity: sensor.cuco_v3_55ef_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
-            name: Water Heater Plug Month Cost
+            name: Dehumidifier Plug Month Cost
             color: deep-orange
           - type: tile
             entity: sensor.cuco_v3_e487_electric_power
@@ -591,40 +619,68 @@ views:
             name: Refrigerator Plug Month Cost
             color: deep-orange
           - type: tile
+            entity: sensor.cuco_cp2d_72e0_electric_power_2
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            color: purple
+            name: Water Heater Plug Real Time Consumption
+          - type: tile
+            entity: sensor.cuco_cp2d_72e0_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Water Heater Plug Today Cost
+            color: light-blue
+          - type: tile
+            entity: sensor.cuco_cp2d_72e0_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Water Heater Plug Month Cost
+            color: deep-orange
+          - type: tile
             entity: sensor.xiaomi_pir1_abb0_battery_level
             layout_options:
               grid_columns: 3
               grid_rows: 1
+            name: WC PIR Sensor Battery Level
           - type: tile
             entity: sensor.xiaomi_03_41b8_battery_level
             layout_options:
               grid_columns: 3
               grid_rows: 1
+            name: WC Human Presence Sensor Battery Level
           - type: tile
             entity: sensor.isa_dw2hl_e225_battery_level
             layout_options:
               grid_columns: 3
               grid_rows: 1
+            name: Gate Opening and Closing Sensor Battery Level
           - type: tile
             entity: sensor.xiaomi_03_8bd4_battery_level
             layout_options:
               grid_columns: 3
               grid_rows: 1
+            name: Gate Human Presence Sensor Battery Level
           - type: tile
             entity: sensor.xiaomi_pir1_7074_battery_level
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Verandahs PIR Sensor Battery Level
           - type: tile
             entity: sensor.lumi_hmcn02_28d5_battery_level
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Curtain Assistant Battery Level
           - type: tile
             entity: sensor.linp_wd1lb_19aa_battery_level
             layout_options:
               grid_columns: 4
               grid_rows: 1
+            name: Window Closer Battery Level
           - type: tile
             entity: sensor.linp_wd1lb_19aa_charging_state
             name: Window Opener Charging State
