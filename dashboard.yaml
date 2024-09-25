@@ -5,6 +5,238 @@ views:
     path: home
     icon: mdi:home-assistant
     sections:
+      - type: grid
+        cards:
+          - type: picture-elements
+            image: /local/dark.jpg
+            elements:
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_right_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/verandshs_2.png
+                  'on': /local/verandahs.png
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_left_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/bedroom_2.png
+                  'on': /local/bedroom.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_left_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/frontdoor_2.png
+                  'on': /local/frontdoor.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_right_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/drawing-room_2.png
+                  'on': /local/drawing room.png
+              - type: image
+                entity: switch.xiaomi_wpro2_3064_left_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/wc_2.png
+                  'on': /local/wc.png
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_right_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 50%
+                  left: 81%
+                  width: 5%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_left_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 50%
+                  left: 63%
+                  width: 5%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_left_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 58%
+                  left: 23%
+                  width: 5%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_right_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 50%
+                  left: 39%
+                  width: 5%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro2_3064_left_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 40%
+                  left: 22%
+                  width: 5%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+            title: My Home
+            layout_options:
+              grid_columns: full
+              grid_rows: 8
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_right_switch_service
+            name: Drawing Room Light
+            icon: mdi:chandelier
+            color: green
+            layout_options:
+              grid_columns: 8
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_left_switch_service
+            name: Front Door Light
+            icon: mdi:coach-lamp
+            color: green
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_left_switch_service
+            name: Washroom Light
+            color: green
+            icon: mdi:globe-light
+          - type: tile
+            entity: switch.xiaomi_wpro2_db24_left_switch_service
+            name: Bedroom Light
+            icon: mdi:floor-lamp
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_wpro2_db24_right_switch_service
+            icon: mdi:ceiling-light
+            name: Verandahs Light
+            color: green
+        column_span: 2
+        title: Home Light
+      - type: grid
+        cards:
+          - type: tile
+            entity: sensor.alarm
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: picture
+            image: https://demo.home-assistant.io/stub_config/t-shirt-promo.png
+            image_entity: image.alarm_image
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+          - type: tile
+            entity: sensor.air_humidity
+          - type: tile
+            entity: sensor.temperature
+          - type: tile
+            entity: sensor.co2
+        column_span: 1
+        title: SenseCAP Watcher
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_right_switch_service
+            name: Fan
+            icon: mdi:fan
+            color: amber
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_illumination
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: sensor.xiaomi_pir1_abb0_illumination_2
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_no_one_duration
+            icon: mdi:account-multiple-minus
+            color: brown
+            name: No One Duration
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_has_someone_duration
+            name: Has Someone Duration
+            icon: mdi:account-multiple-plus
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_occupancy_sensor
+            color: brown
+            icon: mdi:account-alert
+            name: mmWave Sensor State
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
+            name: PIR Sensor
+            color: brown
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: light.xiaomi_wpro2_3064_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+        title: 🚾 Washroom
+        column_span: 1
       - cards:
           - features:
               - type: light-brightness
@@ -81,14 +313,6 @@ views:
         column_span: 1
       - type: grid
         cards:
-          - type: tile
-            entity: switch.xiaomi_wpro2_db24_left_switch_service
-            name: Bedroom Light
-            icon: mdi:floor-lamp
-            color: green
-            layout_options:
-              grid_columns: 4
-              grid_rows: 2
           - features:
               - type: climate-fan-modes
                 style: dropdown
@@ -170,27 +394,6 @@ views:
         column_span: 1
       - type: grid
         cards:
-          - type: tile
-            entity: sensor.alarm
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: picture
-            image: https://demo.home-assistant.io/stub_config/t-shirt-promo.png
-            image_entity: image.alarm_image
-            layout_options:
-              grid_columns: 2
-              grid_rows: 3
-          - type: tile
-            entity: sensor.air_humidity
-          - type: tile
-            entity: sensor.temperature
-          - type: tile
-            entity: sensor.co2
-        column_span: 1
-        title: SenseCAP Watcher
-      - type: grid
-        cards:
           - features:
               - type: cover-open-close
               - type: cover-position
@@ -199,11 +402,6 @@ views:
             icon: mdi:window-open-variant
             color: light-blue
             name: Window Closer
-          - type: tile
-            entity: switch.xiaomi_wpro2_db24_right_switch_service
-            icon: mdi:ceiling-light
-            name: Verandahs Light
-            color: green
           - type: tile
             entity: binary_sensor.xiaomi_pir1_7074_motion_sensor
             name: PIR Sensor
@@ -231,73 +429,9 @@ views:
       - type: grid
         cards:
           - type: tile
-            entity: switch.xiaomi_wpro2_3064_left_switch_service
-            name: Light
-            color: green
-            icon: mdi:globe-light
-          - type: tile
-            entity: switch.xiaomi_wpro2_3064_right_switch_service
-            name: Fan
-            icon: mdi:fan
-            color: amber
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_illumination
-            name: Light Sensor
-            color: blue-grey
-          - type: tile
-            entity: sensor.xiaomi_pir1_abb0_illumination_2
-            name: Light Sensor
-            color: blue-grey
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_no_one_duration
-            icon: mdi:account-multiple-minus
-            color: brown
-            name: No One Duration
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_has_someone_duration
-            name: Has Someone Duration
-            icon: mdi:account-multiple-plus
-            color: brown
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_occupancy_sensor
-            color: brown
-            icon: mdi:account-alert
-            name: mmWave Sensor State
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
-            name: PIR Sensor
-            color: brown
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: light.xiaomi_wpro2_3064_indicator_light
-            name: Indicator Light
-            color: red
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-        title: 🚾 Washroom
-        column_span: 1
-      - type: grid
-        cards:
-          - type: tile
-            entity: switch.xiaomi_wpro3_97cc_left_switch_service
-            name: Front Door Light
-            icon: mdi:coach-lamp
-            color: green
-          - type: tile
             entity: switch.xiaomi_wpro3_97cc_middle_switch_service
             name: Around Light
             icon: mdi:ceiling-light-multiple
-            color: green
-          - type: tile
-            entity: switch.xiaomi_wpro3_97cc_right_switch_service
-            name: Drawing Room Light
-            icon: mdi:chandelier
             color: green
           - type: tile
             entity: binary_sensor.isa_dw2hl_e225_magnet_sensor
