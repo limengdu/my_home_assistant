@@ -82,7 +82,7 @@ views:
                 style:
                   top: 50%
                   left: 81%
-                  width: 5%
+                  width: 3%
                 state_image:
                   'off': /local/close_light.png
                   'on': /local/open_light.png
@@ -93,7 +93,7 @@ views:
                 style:
                   top: 50%
                   left: 63%
-                  width: 5%
+                  width: 3%
                 state_image:
                   'off': /local/close_light.png
                   'on': /local/open_light.png
@@ -104,7 +104,7 @@ views:
                 style:
                   top: 58%
                   left: 23%
-                  width: 5%
+                  width: 3%
                 state_image:
                   'off': /local/close_light.png
                   'on': /local/open_light.png
@@ -115,7 +115,7 @@ views:
                 style:
                   top: 50%
                   left: 39%
-                  width: 5%
+                  width: 3%
                 state_image:
                   'off': /local/close_light.png
                   'on': /local/open_light.png
@@ -124,23 +124,142 @@ views:
                 tap_action:
                   action: toggle
                 style:
-                  top: 40%
-                  left: 22%
-                  width: 5%
+                  top: 38%
+                  left: 21%
+                  width: 3%
                 state_image:
                   'off': /local/close_light.png
                   'on': /local/open_light.png
-            title: My Home
+              - type: image
+                entity: switch.cuco_v3_6a98_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 60%
+                  left: 30%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_bd89_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 40%
+                  left: 49%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_e487_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 39%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_04e6_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 60%
+                  left: 72%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_38e7_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 32%
+                  left: 67%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_55ef_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 77%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_cp2d_72e0_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 81%
+                  width: 3%
+                state_image:
+                  'off': /local/water_heater_off_3.png
+                  'on': /local/water_heater_on.png
+              - type: image
+                entity: switch.xiaomi_wpro2_3064_right_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 46%
+                  left: 23%
+                  width: 3%
+                state_image:
+                  'off': /local/exhaust_fan_off.png
+                  'on': /local/exhaust_fan_on.png
+              - type: image
+                entity: climate.lumi_mcn02_3527_air_conditioner
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 68%
+                  width: 3%
+                state_image:
+                  'off': /local/air_off.png
+                  'on': /local/air_on.png
             layout_options:
-              grid_columns: full
-              grid_rows: 8
+              grid_columns: 8
+              grid_rows: 6
+          - type: tile
+            entity: switch.cuco_v3_55ef_switch
+            name: Dehumidifier Plug
+            color: red
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.cuco_v3_38e7_switch
+            color: red
+            name: NAS Plug
+          - type: tile
+            entity: switch.cuco_v3_e487_switch
+            color: red
+            show_entity_picture: true
+            vertical: false
+            name: WiFi Plug
+          - type: tile
+            entity: switch.cuco_v3_6a98_switch
+            color: red
+            name: Refrigerator Plug
           - type: tile
             entity: switch.xiaomi_wpro3_97cc_right_switch_service
             name: Drawing Room Light
             icon: mdi:chandelier
             color: green
             layout_options:
-              grid_columns: 8
+              grid_columns: 2
               grid_rows: 1
           - type: tile
             entity: switch.xiaomi_wpro3_97cc_left_switch_service
@@ -165,14 +284,26 @@ views:
             icon: mdi:ceiling-light
             name: Verandahs Light
             color: green
-        column_span: 2
-        title: Home Light
-      - type: grid
-        cards:
           - type: tile
-            entity: sensor.alarm
+            entity: switch.cuco_v3_04e6_switch
+            name: Computer Plug
+            color: purple
+            show_entity_picture: false
+          - type: tile
+            entity: switch.cuco_cp2d_72e0_switch
+            name: Water Heater Plug
+            color: purple
             layout_options:
-              grid_columns: 4
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.cuco_v3_bd89_switch
+            color: purple
+            show_entity_picture: true
+            vertical: false
+            name: Charge Plug
+            layout_options:
+              grid_columns: 2
               grid_rows: 1
           - type: picture
             image: https://demo.home-assistant.io/stub_config/t-shirt-promo.png
@@ -180,63 +311,33 @@ views:
             layout_options:
               grid_columns: 2
               grid_rows: 3
+            alt_text: SenseCAP Watcher Alarm Image
+            theme: macOS Theme
+          - type: tile
+            entity: sensor.alarm
+            layout_options:
+              grid_columns: 6
+              grid_rows: 1
+            name: SenseCAP Watcher Alarm
           - type: tile
             entity: sensor.air_humidity
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+            name: SenseCAP Watcher Air Humidity
           - type: tile
             entity: sensor.temperature
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+            name: SenseCAP Watcher Air Temperature
           - type: tile
             entity: sensor.co2
-        column_span: 1
-        title: SenseCAP Watcher
-      - type: grid
-        cards:
-          - type: tile
-            entity: switch.xiaomi_wpro2_3064_right_switch_service
-            name: Fan
-            icon: mdi:fan
-            color: amber
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_illumination
-            name: Light Sensor
-            color: blue-grey
-          - type: tile
-            entity: sensor.xiaomi_pir1_abb0_illumination_2
-            name: Light Sensor
-            color: blue-grey
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_no_one_duration
-            icon: mdi:account-multiple-minus
-            color: brown
-            name: No One Duration
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_has_someone_duration
-            name: Has Someone Duration
-            icon: mdi:account-multiple-plus
-            color: brown
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_occupancy_sensor
-            color: brown
-            icon: mdi:account-alert
-            name: mmWave Sensor State
             layout_options:
-              grid_columns: 4
+              grid_columns: 3
               grid_rows: 1
-          - type: tile
-            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
-            name: PIR Sensor
-            color: brown
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: light.xiaomi_wpro2_3064_indicator_light
-            name: Indicator Light
-            color: red
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-        title: 🚾 Washroom
-        column_span: 1
+            name: SenseCAP Watcher CO2
+        column_span: 4
       - cards:
           - features:
               - type: light-brightness
@@ -337,9 +438,73 @@ views:
             name: Curtain Assistant
             layout_options:
               grid_columns: 4
-              grid_rows: 3
+              grid_rows: 5
         column_span: 1
         title: 🛏 Bedroom
+      - type: grid
+        cards:
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_right_switch_service
+            name: Fan
+            icon: mdi:fan
+            color: amber
+            layout_options:
+              grid_columns: 4
+              grid_rows: 3
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_illumination
+            name: Light Sensor
+            color: blue-grey
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_pir1_abb0_illumination_2
+            name: Light Sensor
+            color: blue-grey
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_no_one_duration
+            icon: mdi:account-multiple-minus
+            color: brown
+            name: No One Duration
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_has_someone_duration
+            name: Has Someone Duration
+            icon: mdi:account-multiple-plus
+            color: brown
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_occupancy_sensor
+            color: brown
+            icon: mdi:account-alert
+            name: mmWave Sensor State
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
+            name: PIR Sensor
+            color: brown
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: light.xiaomi_wpro2_3064_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+        title: 🚾 Washroom
+        column_span: 1
       - type: grid
         cards:
           - type: tile
@@ -376,11 +541,17 @@ views:
             name: Memory Card State
             icon: mdi:micro-sd
             color: pink
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
           - type: tile
             entity: sensor.xiaovv_q12_3bb6_storage_free_space
             name: Memory Card Space
             icon: mdi:sd
             color: pink
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
           - show_state: true
             show_name: true
             camera_view: auto
@@ -415,7 +586,7 @@ views:
             name: Indicator Light
             color: red
             layout_options:
-              grid_columns: 4
+              grid_columns: 2
               grid_rows: 1
           - type: tile
             entity: sensor.mi_989865205_173001015171_scene_history
@@ -474,52 +645,6 @@ views:
               grid_columns: 4
               grid_rows: 1
         title: 🚪 Front Door
-        column_span: 1
-      - type: grid
-        cards:
-          - type: tile
-            entity: switch.cuco_v3_38e7_switch
-            color: red
-            name: NAS Plug
-          - type: tile
-            entity: switch.cuco_v3_e487_switch
-            color: red
-            show_entity_picture: true
-            vertical: false
-            name: WiFi Plug
-          - type: tile
-            entity: switch.cuco_v3_6a98_switch
-            color: red
-            name: Refrigerator Plug
-          - type: tile
-            entity: switch.cuco_v3_55ef_switch
-            name: Dehumidifier Plug
-            color: red
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.cuco_v3_04e6_switch
-            name: Computer Plug
-            color: purple
-            show_entity_picture: false
-          - type: tile
-            entity: switch.cuco_cp2d_72e0_switch
-            name: Water Heater Plug
-            color: purple
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.cuco_v3_bd89_switch
-            color: purple
-            show_entity_picture: true
-            vertical: false
-            name: Charge Plug
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-        title: 🔌 Plug
         column_span: 1
       - type: grid
         cards:
