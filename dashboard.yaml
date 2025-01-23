@@ -711,7 +711,64 @@ views:
               - type: tile
                 entity: switch.p1s_01p09c4a3000438_enable_camera
                 name: Enable Camera
-        column_span: 3
+        column_span: 2
+      - type: grid
+        cards:
+          - type: tile
+            entity: sensor.mi_989865205_173001015171_scene_history
+            name: Automation Message
+            color: deep-purple
+            layout_options:
+              grid_columns: 4
+              grid_rows: 2
+          - type: tile
+            entity: switch.xiaomi_s2_fa6e_switch_status
+            name: Dishwasher Power Button
+          - features:
+              - type: select-options
+            type: tile
+            entity: select.xiaomi_s2_fa6e_mode
+            name: Dishwasher Mode
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+          - type: tile
+            entity: button.xiaomi_s2_fa6e_pause
+            name: Dishwasher Paused
+          - type: tile
+            entity: switch.xiaomi_s2_fa6e_physical_control_locked
+            name: Dishwasher Locked
+          - type: tile
+            entity: button.xiaomi_s2_fa6e_start_wash
+            name: Dishwasher Start Washing
+          - type: tile
+            entity: button.xiaomi_s2_fa6e_stop_washing
+            name: Dishwasher Stop Washing
+          - type: tile
+            entity: sensor.xiaomi_s2_fa6e_door_state
+            name: Dishwasher Door State
+          - type: tile
+            entity: sensor.xiaomi_s2_fa6e_left_time
+            name: Dishwasher Left Time
+          - type: tile
+            entity: sensor.xiaomi_s2_fa6e_status
+            name: Dishwasher Status
+          - type: tile
+            entity: sensor.chunmi_cmwy3_76cb_left_time
+            name: Cooker custom left-time
+          - type: tile
+            entity: button.chunmi_cmwy3_76cb_cancel_cooking
+            name: Cooker Cooking
+          - type: tile
+            entity: select.chunmi_cmwy3_76cb_start_cook
+            name: Cooker Start Cook
+            features:
+              - type: select-options
+          - type: tile
+            entity: sensor.chunmi_cmwy3_76cb_status
+            name: Cooker Status
+        title: 🐔 Ktchenette
+        column_span: 1
       - type: grid
         cards:
           - type: picture-elements
@@ -961,6 +1018,9 @@ views:
             color: red
             name: Refrigerator Plug
           - type: tile
+            entity: light.xiaomi_pro3_4ed4_light
+            name: Verandahs Light
+          - type: tile
             entity: switch.xiaomi_wpro3_97cc_right_switch_service
             name: Drawing Room Light
             icon: mdi:chandelier
@@ -986,11 +1046,6 @@ views:
             layout_options:
               grid_columns: 2
               grid_rows: 1
-          - type: tile
-            entity: switch.xiaomi_wpro2_db24_right_switch_service
-            icon: mdi:ceiling-light
-            name: Verandahs Light
-            color: green
           - type: tile
             entity: switch.cuco_v3_04e6_switch
             name: Computer Plug
@@ -1296,12 +1351,28 @@ views:
               grid_columns: 2
               grid_rows: 1
           - type: tile
-            entity: sensor.mi_989865205_173001015171_scene_history
-            name: Automation Message
-            color: deep-purple
+            entity: switch.xiaomi_wpro2_db24_right_switch_service
+            icon: ''
+            name: Clothes Airer Switch
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_pro3_4ed4_alarm
+            name: Clothes Airer Alarm
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - features:
+              - type: cover-open-close
+              - type: cover-position
+            type: tile
+            entity: cover.xiaomi_pro3_4ed4_airer
+            name: Clothes Airer Control
             layout_options:
               grid_columns: 4
-              grid_rows: 2
+              grid_rows: 3
         title: ☀️ Verandahs
         column_span: 1
       - type: grid
@@ -1636,9 +1707,27 @@ views:
               grid_rows: 1
             name: Verandahs PIR Sensor Battery Level
           - type: tile
+            entity: sensor.lumi_mcn001_4fe3_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+            name: IoT Button(verandahs) Battery Level
+          - type: tile
+            entity: sensor.lumi_mcn001_70a1_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+            name: IoT Button(front door) Battery Level
+          - type: tile
+            entity: sensor.lumi_mcn001_7898_battery_level
+            layout_options:
+              grid_columns: 3
+              grid_rows: 1
+            name: IoT Button(room) Battery Level
+          - type: tile
             entity: sensor.lumi_hmcn02_28d5_battery_level
             layout_options:
-              grid_columns: 4
+              grid_columns: 3
               grid_rows: 1
             name: Curtain Assistant Battery Level
           - type: tile
