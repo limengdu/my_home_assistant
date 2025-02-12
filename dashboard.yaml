@@ -8,6 +8,820 @@ views:
       - type: grid
         cards:
           - type: picture-elements
+            image: /local/dark.jpg
+            elements:
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_right_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/verandshs_2.png
+                  'on': /local/verandahs.png
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_left_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/bedroom_2.png
+                  'on': /local/bedroom.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_left_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/frontdoor_2.png
+                  'on': /local/frontdoor.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_right_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/drawing-room_2.png
+                  'on': /local/drawing room.png
+              - type: image
+                entity: switch.xiaomi_wpro2_3064_left_switch_service
+                tap_action:
+                  action: none
+                style:
+                  pointer-events: none
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  mix_blend_mode: lighten
+                state_image:
+                  'off': /local/wc_2.png
+                  'on': /local/wc.png
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_right_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 50%
+                  left: 81%
+                  width: 3%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro2_db24_left_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 50%
+                  left: 63%
+                  width: 3%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_left_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 58%
+                  left: 23%
+                  width: 3%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro3_97cc_right_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 50%
+                  left: 39%
+                  width: 3%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.xiaomi_wpro2_3064_left_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 38%
+                  left: 21%
+                  width: 3%
+                state_image:
+                  'off': /local/close_light.png
+                  'on': /local/open_light.png
+              - type: image
+                entity: switch.cuco_v3_6a98_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 60%
+                  left: 30%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_bd89_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 40%
+                  left: 49%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_e487_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 39%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_04e6_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 60%
+                  left: 72%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_38e7_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 32%
+                  left: 67%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_v3_55ef_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 77%
+                  width: 3%
+                state_image:
+                  'off': /local/switch_off_2.png
+                  'on': /local/switch_on_2.png
+              - type: image
+                entity: switch.cuco_cp2d_72e0_switch
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 81%
+                  width: 3%
+                state_image:
+                  'off': /local/water_heater_off_3.png
+                  'on': /local/water_heater_on.png
+              - type: image
+                entity: switch.xiaomi_wpro2_3064_right_switch_service
+                tap_action:
+                  action: toggle
+                style:
+                  top: 46%
+                  left: 23%
+                  width: 3%
+                state_image:
+                  'off': /local/exhaust_fan_off.png
+                  'on': /local/exhaust_fan_on.png
+              - type: image
+                entity: climate.lumi_mcn02_3527_air_conditioner
+                tap_action:
+                  action: toggle
+                style:
+                  top: 69%
+                  left: 68%
+                  width: 3%
+                state_image:
+                  'off': /local/air_off.png
+                  'on': /local/air_on.png
+            grid_options:
+              columns: 18
+              rows: 6
+          - type: picture
+            image: https://demo.home-assistant.io/stub_config/t-shirt-promo.png
+            image_entity: image.alarm_image
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+            alt_text: SenseCAP Watcher Alarm Image
+            theme: macOS Theme
+          - type: tile
+            entity: switch.cuco_v3_55ef_switch
+            name: Dehumidifier Plug
+            color: red
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.cuco_v3_38e7_switch
+            color: red
+            name: NAS Plug
+          - type: tile
+            entity: switch.cuco_v3_e487_switch
+            color: red
+            show_entity_picture: true
+            vertical: false
+            name: WiFi Plug
+          - type: tile
+            entity: switch.cuco_v3_6a98_switch
+            color: red
+            name: Refrigerator Plug
+          - type: tile
+            entity: light.xiaomi_pro3_4ed4_light
+            name: Verandahs Light
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_right_switch_service
+            name: Drawing Room Light
+            icon: mdi:chandelier
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_left_switch_service
+            name: Front Door Light
+            icon: mdi:coach-lamp
+            color: green
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_left_switch_service
+            name: Washroom Light
+            color: green
+            icon: mdi:globe-light
+          - type: tile
+            entity: switch.xiaomi_wpro2_db24_left_switch_service
+            name: Bedroom Light
+            icon: mdi:floor-lamp
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_wpro3_97cc_middle_switch_service
+            name: Around Light
+            icon: mdi:ceiling-light-multiple
+            color: green
+          - type: tile
+            entity: switch.cuco_v3_04e6_switch
+            name: Computer Plug
+            color: purple
+            show_entity_picture: false
+          - type: tile
+            entity: switch.cuco_cp2d_72e0_switch
+            name: Water Heater Plug
+            color: purple
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.cuco_v3_bd89_switch
+            color: purple
+            show_entity_picture: true
+            vertical: false
+            name: Charge Plug
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.cuco_v3_55ef_switch
+            name: Dishwasher Plug
+          - type: tile
+            entity: switch.cuco_v3_6a98_switch
+            name: Washing Machine Plug
+          - type: tile
+            entity: switch.cuco_v3_4b8b_switch_status
+            name: Bedroom Mosquito Coil Plug
+          - type: tile
+            entity: switch.cuco_v3_6d89_switch_status
+            name: Drawing Room Mosquito Coil Plug
+          - type: tile
+            entity: sensor.alarm
+            name: SenseCAP Watcher Alarm
+            grid_options:
+              columns: 9
+              rows: 1
+          - type: tile
+            entity: sensor.air_humidity
+            name: SenseCAP Watcher Air Humidity
+            grid_options:
+              columns: 9
+              rows: 1
+          - type: tile
+            entity: sensor.temperature
+            name: SenseCAP Watcher Air Temperature
+            grid_options:
+              columns: 9
+              rows: 1
+          - type: tile
+            entity: sensor.co2
+            name: SenseCAP Watcher CO2
+            grid_options:
+              columns: 9
+              rows: 1
+        column_span: 4
+      - cards:
+          - type: heading
+            heading: '🛋️ Drawing Room '
+          - features:
+              - type: light-brightness
+            type: tile
+            entity: light.iot_socd01_723c_light
+            color: green
+            show_entity_picture: true
+            vertical: false
+            name: Left Ambient Light
+            icon: mdi:string-lights
+          - features:
+              - type: light-brightness
+            type: tile
+            entity: light.iot_socd01_a65c_light
+            name: Right Ambient Light
+            color: green
+            show_entity_picture: true
+            icon: mdi:string-lights
+          - type: tile
+            entity: fan.jipin_f001_2a17_fan
+            color: amber
+            name: Fan
+            show_entity_picture: false
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+            features:
+              - type: fan-speed
+              - type: fan-preset-modes
+                style: dropdown
+          - type: tile
+            entity: light.jipin_f001_2a17_indicator_light
+            name: Fan Indicator Light
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+          - type: tile
+            entity: select.remote_ir_1826277735329325058
+            name: TV Switch
+            icon: mdi:remote-tv
+            color: primary
+            features:
+              - type: select-options
+          - features:
+              - type: select-options
+            type: tile
+            entity: select.xiaomi_eanfv1_cbaa_keycodes
+            name: TV Control
+            icon: mdi:television
+            color: primary
+            show_entity_picture: false
+            layout_options:
+              grid_columns: 2
+              grid_rows: 4
+          - type: tile
+            entity: select.remote_ir_1826412961812602880
+            name: TV Box Switch
+            icon: mdi:remote-tv
+            color: accent
+            features:
+              - type: select-options
+          - type: tile
+            entity: text.xiaomi_eanfv1_cbaa_post
+            name: TV Post
+            icon: mdi:youtube-tv
+            color: primary
+          - type: tile
+            entity: number.xiaomi_eanfv1_cbaa_volume
+            name: TV Volume
+            icon: mdi:volume-medium
+            color: accent
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: 🛏 Bedroom
+          - features:
+              - type: climate-fan-modes
+                style: dropdown
+              - type: climate-hvac-modes
+              - type: climate-swing-modes
+                style: dropdown
+              - type: target-temperature
+            type: tile
+            entity: climate.lumi_mcn02_3527_air_conditioner
+            layout_options:
+              grid_columns: 4
+              grid_rows: 5
+            name: Air Conditioner
+            icon: mdi:air-conditioner
+          - features:
+              - type: cover-open-close
+              - type: cover-position
+            type: tile
+            entity: cover.lumi_hmcn02_28d5_curtain
+            show_entity_picture: false
+            color: cyan
+            name: Curtain Assistant
+            layout_options:
+              grid_columns: 4
+              grid_rows: 5
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: 🐔 Ktchenette
+          - type: tile
+            entity: sensor.mi_989865205_173001015171_scene_history
+            name: Automation Message
+            color: deep-purple
+            layout_options:
+              grid_columns: 4
+              grid_rows: 2
+          - type: tile
+            entity: switch.xiaomi_s2_fa6e_switch_status
+            name: Dishwasher Power Button
+          - features:
+              - type: select-options
+            type: tile
+            entity: select.xiaomi_s2_fa6e_mode
+            name: Dishwasher Mode
+            layout_options:
+              grid_columns: 2
+              grid_rows: 3
+          - type: tile
+            entity: button.xiaomi_s2_fa6e_pause
+            name: Dishwasher Paused
+          - type: tile
+            entity: switch.xiaomi_s2_fa6e_physical_control_locked
+            name: Dishwasher Locked
+          - type: tile
+            entity: button.xiaomi_s2_fa6e_start_wash
+            name: Dishwasher Start Washing
+          - type: tile
+            entity: button.xiaomi_s2_fa6e_stop_washing
+            name: Dishwasher Stop Washing
+          - type: tile
+            entity: sensor.xiaomi_s2_fa6e_door_state
+            name: Dishwasher Door State
+          - type: tile
+            entity: sensor.xiaomi_s2_fa6e_left_time
+            name: Dishwasher Left Time
+          - type: tile
+            entity: sensor.xiaomi_s2_fa6e_status
+            name: Dishwasher Status
+          - type: tile
+            entity: sensor.chunmi_cmwy3_76cb_left_time
+            name: Cooker custom left-time
+          - type: tile
+            entity: button.chunmi_cmwy3_76cb_cancel_cooking
+            name: Cooker Cooking
+          - type: tile
+            entity: select.chunmi_cmwy3_76cb_start_cook
+            name: Cooker Start Cook
+            features:
+              - type: select-options
+          - type: tile
+            entity: sensor.chunmi_cmwy3_76cb_status
+            name: Cooker Status
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: 🚾 Washroom
+          - type: tile
+            entity: switch.xiaomi_wpro2_3064_right_switch_service
+            name: Fan
+            icon: mdi:fan
+            color: amber
+            layout_options:
+              grid_columns: 4
+              grid_rows: 3
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_illumination
+            name: Light Sensor
+            color: blue-grey
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_pir1_abb0_illumination_2
+            name: Light Sensor
+            color: blue-grey
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_no_one_duration
+            icon: mdi:account-multiple-minus
+            color: brown
+            name: No One Duration
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_has_someone_duration
+            name: Has Someone Duration
+            icon: mdi:account-multiple-plus
+            color: brown
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_41b8_occupancy_sensor
+            color: brown
+            icon: mdi:account-alert
+            name: mmWave Sensor State
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
+            name: PIR Sensor
+            color: brown
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+          - type: tile
+            entity: light.xiaomi_wpro2_3064_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: 📷 AI Camera
+          - type: tile
+            entity: switch.xiaovv_q12_3bb6_switch_status
+            name: Camera Switch
+            grid_options:
+              columns: 12
+              rows: 1
+          - type: tile
+            entity: select.xiaovv_q12_3bb6_detection_sensitivity
+            name: Motion Detection Sensitivity
+            icon: mdi:case-sensitive-alt
+            color: yellow
+            features:
+              - type: select-options
+          - type: tile
+            entity: select.xiaovv_q12_3bb6_recording_mode
+            name: Recording Mode
+            icon: mdi:sd
+            color: red
+            features:
+              - type: select-options
+          - type: tile
+            entity: switch.xiaovv_q12_3bb6_motion_detection
+            name: Motion Detection
+            icon: mdi:motion-sensor
+          - type: tile
+            entity: number.xiaovv_q12_3bb6_alarm_interval
+            name: Motion Alarm Interval
+            icon: mdi:clock-time-eight
+            color: cyan
+          - type: tile
+            entity: sensor.xiaovv_q12_3bb6_status
+            name: Memory Card State
+            icon: mdi:micro-sd
+            color: pink
+            grid_options:
+              columns: 6
+              rows: 1
+          - type: tile
+            entity: sensor.xiaovv_q12_3bb6_storage_free_space
+            name: Memory Card Space
+            icon: mdi:sd
+            color: pink
+            grid_options:
+              columns: 6
+              rows: 1
+          - show_state: true
+            show_name: true
+            camera_view: auto
+            type: picture-entity
+            image: https://demo.home-assistant.io/stub_config/bedroom.png
+            entity: camera.xiaovv_q12_3bb6_camera_control
+            name: Camera Picture
+            camera_image: camera.xiaovv_q12_3bb6_camera_control
+            theme: macOS Theme
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: ☀️ Verandahs
+          - features:
+              - type: cover-open-close
+              - type: cover-position
+            type: tile
+            entity: cover.linp_wd1lb_19aa_window_opener
+            icon: mdi:window-open-variant
+            color: light-blue
+            name: Window Closer
+          - type: tile
+            entity: binary_sensor.xiaomi_pir1_7074_motion_sensor
+            name: PIR Sensor
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_pir1_7074_illumination_2
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: light.xiaomi_wpro2_db24_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_wpro2_db24_right_switch_service
+            icon: ''
+            name: Clothes Airer Switch
+            color: green
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - type: tile
+            entity: switch.xiaomi_pro3_4ed4_alarm
+            name: Clothes Airer Alarm
+            layout_options:
+              grid_columns: 2
+              grid_rows: 1
+          - features:
+              - type: cover-open-close
+              - type: cover-position
+            type: tile
+            entity: cover.xiaomi_pro3_4ed4_airer
+            name: Clothes Airer Control
+            layout_options:
+              grid_columns: 4
+              grid_rows: 3
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: 🚪 Front Door
+          - type: tile
+            entity: binary_sensor.isa_dw2hl_e225_magnet_sensor
+            name: Front Door State
+            color: brown
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_no_one_duration
+            name: No One Duration
+            icon: mdi:account-multiple-minus
+            color: brown
+            grid_options:
+              columns: 12
+              rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_has_someone_duration
+            name: Has Someone Duration
+            icon: mdi:account-multiple-plus
+            color: brown
+            grid_options:
+              columns: 12
+              rows: 1
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_occupancy_sensor
+            name: mmWave Sensor State
+            icon: mdi:account-alert
+            color: brown
+            grid_options:
+              columns: 12
+              rows: 1
+          - type: tile
+            entity: sensor.ainice_rd_555d_occupancy_sensor
+            color: brown
+            name: Dual Presence Sensor
+            icon: mdi:account
+            grid_options:
+              columns: 12
+              rows: 1
+          - type: tile
+            entity: sensor.isa_dw2hl_e225_illumination_2
+            name: Light Sensor
+            color: blue-grey
+            icon: mdi:lightbulb-on-30
+          - type: tile
+            entity: sensor.xiaomi_03_8bd4_illumination
+            name: Light Sensor
+            color: blue-grey
+          - type: tile
+            entity: light.xiaomi_wpro3_97cc_indicator_light
+            name: Indicator Light
+            color: red
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+        column_span: 1
+      - type: grid
+        cards:
+          - type: heading
+            heading: 📢 AI Speaker
+          - type: tile
+            entity: sensor.xiaomi_lx06_9c00_conversation
+            name: Control Command
+            color: blue-grey
+            show_entity_picture: true
+            vertical: true
+            hide_state: false
+          - type: tile
+            entity: text.xiaomi_lx06_9c00_play_text
+            name: Play Text
+            color: amber
+          - type: tile
+            entity: switch.xiaomi_lx06_9c00_sleep_mode
+            name: Sleep Mode
+            icon: mdi:power-sleep
+            color: brown
+          - type: tile
+            entity: button.xiaomi_lx06_9c00_play_music
+            name: Play Music
+            icon: mdi:speaker
+            color: light-blue
+            show_entity_picture: true
+            vertical: false
+          - type: tile
+            entity: text.xiaomi_lx06_9c00_execute_text_directive
+            name: Execute Text
+            color: amber
+          - type: tile
+            entity: button.xiaomi_lx06_9c00_wake_up
+            name: Wake up
+            icon: ''
+            color: light-green
+          - type: tile
+            entity: button.xiaomi_lx06_9c00_stop_alarm
+            name: Stop Alarm
+            color: disabled
+            show_entity_picture: true
+            icon: mdi:clock-check
+          - type: heading
+            icon: mdi:air-humidifier
+            heading: Dehumidifiers
+            heading_style: title
+          - type: tile
+            entity: sensor.z1_countdown
+          - type: tile
+            entity: sensor.z1_error
+          - type: tile
+            entity: sensor.z1_state
+          - type: tile
+            entity: sensor.z1_washing_left
+        column_span: 1
+    badges:
+      - type: entity
+        show_name: false
+        show_state: true
+        show_icon: true
+        entity: sensor.sun_next_dawn
+    max_columns: 4
+    theme: macOS Theme
+    cards: []
+  - type: sections
+    max_columns: 4
+    title: 👔 Company
+    path: company
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: Bambu P1S
+          - type: picture-elements
             elements:
               - type: conditional
                 conditions:
@@ -588,7 +1402,6 @@ views:
             layout_options:
               grid_columns: 4
               grid_rows: auto
-        title: Bambu P1S
         column_span: 1
       - type: grid
         cards:
@@ -712,807 +1525,45 @@ views:
                 entity: switch.p1s_01p09c4a3000438_enable_camera
                 name: Enable Camera
         column_span: 2
+    cards: []
+    icon: mdi:briefcase
+    theme: macOS Theme
+  - type: sections
+    max_columns: 4
+    title: 🔋 Energy
+    path: energy
+    sections:
       - type: grid
         cards:
-          - type: tile
-            entity: sensor.mi_989865205_173001015171_scene_history
-            name: Automation Message
-            color: deep-purple
-            layout_options:
-              grid_columns: 4
-              grid_rows: 2
-          - type: tile
-            entity: switch.xiaomi_s2_fa6e_switch_status
-            name: Dishwasher Power Button
-          - features:
-              - type: select-options
-            type: tile
-            entity: select.xiaomi_s2_fa6e_mode
-            name: Dishwasher Mode
-            layout_options:
-              grid_columns: 2
-              grid_rows: 3
-          - type: tile
-            entity: button.xiaomi_s2_fa6e_pause
-            name: Dishwasher Paused
-          - type: tile
-            entity: switch.xiaomi_s2_fa6e_physical_control_locked
-            name: Dishwasher Locked
-          - type: tile
-            entity: button.xiaomi_s2_fa6e_start_wash
-            name: Dishwasher Start Washing
-          - type: tile
-            entity: button.xiaomi_s2_fa6e_stop_washing
-            name: Dishwasher Stop Washing
-          - type: tile
-            entity: sensor.xiaomi_s2_fa6e_door_state
-            name: Dishwasher Door State
-          - type: tile
-            entity: sensor.xiaomi_s2_fa6e_left_time
-            name: Dishwasher Left Time
-          - type: tile
-            entity: sensor.xiaomi_s2_fa6e_status
-            name: Dishwasher Status
-          - type: tile
-            entity: sensor.chunmi_cmwy3_76cb_left_time
-            name: Cooker custom left-time
-          - type: tile
-            entity: button.chunmi_cmwy3_76cb_cancel_cooking
-            name: Cooker Cooking
-          - type: tile
-            entity: select.chunmi_cmwy3_76cb_start_cook
-            name: Cooker Start Cook
-            features:
-              - type: select-options
-          - type: tile
-            entity: sensor.chunmi_cmwy3_76cb_status
-            name: Cooker Status
-        title: 🐔 Ktchenette
-        column_span: 1
-      - type: grid
-        cards:
-          - type: picture-elements
-            image: /local/dark.jpg
-            elements:
-              - type: image
-                entity: switch.xiaomi_wpro2_db24_right_switch_service
-                tap_action:
-                  action: none
-                style:
-                  pointer-events: none
-                  top: 50%
-                  left: 50%
-                  width: 100%
-                  mix_blend_mode: lighten
-                state_image:
-                  'off': /local/verandshs_2.png
-                  'on': /local/verandahs.png
-              - type: image
-                entity: switch.xiaomi_wpro2_db24_left_switch_service
-                tap_action:
-                  action: none
-                style:
-                  pointer-events: none
-                  top: 50%
-                  left: 50%
-                  width: 100%
-                  mix_blend_mode: lighten
-                state_image:
-                  'off': /local/bedroom_2.png
-                  'on': /local/bedroom.png
-              - type: image
-                entity: switch.xiaomi_wpro3_97cc_left_switch_service
-                tap_action:
-                  action: none
-                style:
-                  pointer-events: none
-                  top: 50%
-                  left: 50%
-                  width: 100%
-                  mix_blend_mode: lighten
-                state_image:
-                  'off': /local/frontdoor_2.png
-                  'on': /local/frontdoor.png
-              - type: image
-                entity: switch.xiaomi_wpro3_97cc_right_switch_service
-                tap_action:
-                  action: none
-                style:
-                  pointer-events: none
-                  top: 50%
-                  left: 50%
-                  width: 100%
-                  mix_blend_mode: lighten
-                state_image:
-                  'off': /local/drawing-room_2.png
-                  'on': /local/drawing room.png
-              - type: image
-                entity: switch.xiaomi_wpro2_3064_left_switch_service
-                tap_action:
-                  action: none
-                style:
-                  pointer-events: none
-                  top: 50%
-                  left: 50%
-                  width: 100%
-                  mix_blend_mode: lighten
-                state_image:
-                  'off': /local/wc_2.png
-                  'on': /local/wc.png
-              - type: image
-                entity: switch.xiaomi_wpro2_db24_right_switch_service
-                tap_action:
-                  action: toggle
-                style:
-                  top: 50%
-                  left: 81%
-                  width: 3%
-                state_image:
-                  'off': /local/close_light.png
-                  'on': /local/open_light.png
-              - type: image
-                entity: switch.xiaomi_wpro2_db24_left_switch_service
-                tap_action:
-                  action: toggle
-                style:
-                  top: 50%
-                  left: 63%
-                  width: 3%
-                state_image:
-                  'off': /local/close_light.png
-                  'on': /local/open_light.png
-              - type: image
-                entity: switch.xiaomi_wpro3_97cc_left_switch_service
-                tap_action:
-                  action: toggle
-                style:
-                  top: 58%
-                  left: 23%
-                  width: 3%
-                state_image:
-                  'off': /local/close_light.png
-                  'on': /local/open_light.png
-              - type: image
-                entity: switch.xiaomi_wpro3_97cc_right_switch_service
-                tap_action:
-                  action: toggle
-                style:
-                  top: 50%
-                  left: 39%
-                  width: 3%
-                state_image:
-                  'off': /local/close_light.png
-                  'on': /local/open_light.png
-              - type: image
-                entity: switch.xiaomi_wpro2_3064_left_switch_service
-                tap_action:
-                  action: toggle
-                style:
-                  top: 38%
-                  left: 21%
-                  width: 3%
-                state_image:
-                  'off': /local/close_light.png
-                  'on': /local/open_light.png
-              - type: image
-                entity: switch.cuco_v3_6a98_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 60%
-                  left: 30%
-                  width: 3%
-                state_image:
-                  'off': /local/switch_off_2.png
-                  'on': /local/switch_on_2.png
-              - type: image
-                entity: switch.cuco_v3_bd89_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 40%
-                  left: 49%
-                  width: 3%
-                state_image:
-                  'off': /local/switch_off_2.png
-                  'on': /local/switch_on_2.png
-              - type: image
-                entity: switch.cuco_v3_e487_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 69%
-                  left: 39%
-                  width: 3%
-                state_image:
-                  'off': /local/switch_off_2.png
-                  'on': /local/switch_on_2.png
-              - type: image
-                entity: switch.cuco_v3_04e6_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 60%
-                  left: 72%
-                  width: 3%
-                state_image:
-                  'off': /local/switch_off_2.png
-                  'on': /local/switch_on_2.png
-              - type: image
-                entity: switch.cuco_v3_38e7_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 32%
-                  left: 67%
-                  width: 3%
-                state_image:
-                  'off': /local/switch_off_2.png
-                  'on': /local/switch_on_2.png
-              - type: image
-                entity: switch.cuco_v3_55ef_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 69%
-                  left: 77%
-                  width: 3%
-                state_image:
-                  'off': /local/switch_off_2.png
-                  'on': /local/switch_on_2.png
-              - type: image
-                entity: switch.cuco_cp2d_72e0_switch
-                tap_action:
-                  action: toggle
-                style:
-                  top: 69%
-                  left: 81%
-                  width: 3%
-                state_image:
-                  'off': /local/water_heater_off_3.png
-                  'on': /local/water_heater_on.png
-              - type: image
-                entity: switch.xiaomi_wpro2_3064_right_switch_service
-                tap_action:
-                  action: toggle
-                style:
-                  top: 46%
-                  left: 23%
-                  width: 3%
-                state_image:
-                  'off': /local/exhaust_fan_off.png
-                  'on': /local/exhaust_fan_on.png
-              - type: image
-                entity: climate.lumi_mcn02_3527_air_conditioner
-                tap_action:
-                  action: toggle
-                style:
-                  top: 69%
-                  left: 68%
-                  width: 3%
-                state_image:
-                  'off': /local/air_off.png
-                  'on': /local/air_on.png
-            layout_options:
-              grid_columns: 8
-              grid_rows: 6
-          - type: tile
-            entity: switch.cuco_v3_55ef_switch
-            name: Dehumidifier Plug
-            color: red
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.cuco_v3_38e7_switch
-            color: red
-            name: NAS Plug
-          - type: tile
-            entity: switch.cuco_v3_e487_switch
-            color: red
-            show_entity_picture: true
-            vertical: false
-            name: WiFi Plug
-          - type: tile
-            entity: switch.cuco_v3_6a98_switch
-            color: red
-            name: Refrigerator Plug
-          - type: tile
-            entity: light.xiaomi_pro3_4ed4_light
-            name: Verandahs Light
-          - type: tile
-            entity: switch.xiaomi_wpro3_97cc_right_switch_service
-            name: Drawing Room Light
-            icon: mdi:chandelier
-            color: green
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.xiaomi_wpro3_97cc_left_switch_service
-            name: Front Door Light
-            icon: mdi:coach-lamp
-            color: green
-          - type: tile
-            entity: switch.xiaomi_wpro2_3064_left_switch_service
-            name: Washroom Light
-            color: green
-            icon: mdi:globe-light
-          - type: tile
-            entity: switch.xiaomi_wpro2_db24_left_switch_service
-            name: Bedroom Light
-            icon: mdi:floor-lamp
-            color: green
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.cuco_v3_04e6_switch
-            name: Computer Plug
-            color: purple
-            show_entity_picture: false
-          - type: tile
-            entity: switch.cuco_cp2d_72e0_switch
-            name: Water Heater Plug
-            color: purple
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.cuco_v3_bd89_switch
-            color: purple
-            show_entity_picture: true
-            vertical: false
-            name: Charge Plug
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: picture
-            image: https://demo.home-assistant.io/stub_config/t-shirt-promo.png
-            image_entity: image.alarm_image
-            layout_options:
-              grid_columns: 2
-              grid_rows: 3
-            alt_text: SenseCAP Watcher Alarm Image
-            theme: macOS Theme
-          - type: tile
-            entity: sensor.alarm
-            layout_options:
-              grid_columns: 6
-              grid_rows: 1
-            name: SenseCAP Watcher Alarm
-          - type: tile
-            entity: sensor.air_humidity
-            layout_options:
-              grid_columns: 3
-              grid_rows: 1
-            name: SenseCAP Watcher Air Humidity
-          - type: tile
-            entity: sensor.temperature
-            layout_options:
-              grid_columns: 3
-              grid_rows: 1
-            name: SenseCAP Watcher Air Temperature
-          - type: tile
-            entity: sensor.co2
-            layout_options:
-              grid_columns: 3
-              grid_rows: 1
-            name: SenseCAP Watcher CO2
-        column_span: 4
-      - cards:
-          - features:
-              - type: light-brightness
-            type: tile
-            entity: light.iot_socd01_723c_light
-            color: green
-            show_entity_picture: true
-            vertical: false
-            name: Left Ambient Light
-            icon: mdi:string-lights
-          - features:
-              - type: light-brightness
-            type: tile
-            entity: light.iot_socd01_a65c_light
-            name: Right Ambient Light
-            color: green
-            show_entity_picture: true
-            icon: mdi:string-lights
-          - type: tile
-            entity: fan.jipin_f001_2a17_fan
-            color: amber
-            name: Fan
-            show_entity_picture: false
-            layout_options:
-              grid_columns: 2
-              grid_rows: 3
-            features:
-              - type: fan-speed
-              - type: fan-preset-modes
-                style: dropdown
-          - type: tile
-            entity: light.jipin_f001_2a17_indicator_light
-            name: Fan Indicator Light
-            color: green
-            layout_options:
-              grid_columns: 2
-              grid_rows: 3
-          - type: tile
-            entity: select.remote_ir_1826277735329325058
-            name: TV Switch
-            icon: mdi:remote-tv
-            color: primary
-            features:
-              - type: select-options
-          - features:
-              - type: select-options
-            type: tile
-            entity: select.xiaomi_eanfv1_cbaa_keycodes
-            name: TV Control
-            icon: mdi:television
-            color: primary
-            show_entity_picture: false
-            layout_options:
-              grid_columns: 2
-              grid_rows: 4
-          - type: tile
-            entity: select.remote_ir_1826412961812602880
-            name: TV Box Switch
-            icon: mdi:remote-tv
-            color: accent
-            features:
-              - type: select-options
-          - type: tile
-            entity: text.xiaomi_eanfv1_cbaa_post
-            name: TV Post
-            icon: mdi:youtube-tv
-            color: primary
-          - type: tile
-            entity: number.xiaomi_eanfv1_cbaa_volume
-            name: TV Volume
-            icon: mdi:volume-medium
-            color: accent
-        title: '🛋️ Drawing Room '
-        column_span: 1
-      - type: grid
-        cards:
-          - features:
-              - type: climate-fan-modes
-                style: dropdown
-              - type: climate-hvac-modes
-              - type: climate-swing-modes
-                style: dropdown
-              - type: target-temperature
-            type: tile
-            entity: climate.lumi_mcn02_3527_air_conditioner
-            layout_options:
-              grid_columns: 4
-              grid_rows: 5
-            name: Air Conditioner
-            icon: mdi:air-conditioner
-          - features:
-              - type: cover-open-close
-              - type: cover-position
-            type: tile
-            entity: cover.lumi_hmcn02_28d5_curtain
-            show_entity_picture: false
-            color: cyan
-            name: Curtain Assistant
-            layout_options:
-              grid_columns: 4
-              grid_rows: 5
-        column_span: 1
-        title: 🛏 Bedroom
-      - type: grid
-        cards:
-          - type: tile
-            entity: switch.xiaomi_wpro2_3064_right_switch_service
-            name: Fan
-            icon: mdi:fan
-            color: amber
-            layout_options:
-              grid_columns: 4
-              grid_rows: 3
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_illumination
-            name: Light Sensor
-            color: blue-grey
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: sensor.xiaomi_pir1_abb0_illumination_2
-            name: Light Sensor
-            color: blue-grey
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_no_one_duration
-            icon: mdi:account-multiple-minus
-            color: brown
-            name: No One Duration
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_has_someone_duration
-            name: Has Someone Duration
-            icon: mdi:account-multiple-plus
-            color: brown
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: sensor.xiaomi_03_41b8_occupancy_sensor
-            color: brown
-            icon: mdi:account-alert
-            name: mmWave Sensor State
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: binary_sensor.xiaomi_pir1_abb0_motion_sensor
-            name: PIR Sensor
-            color: brown
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: light.xiaomi_wpro2_3064_indicator_light
-            name: Indicator Light
-            color: red
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-        title: 🚾 Washroom
-        column_span: 1
-      - type: grid
-        cards:
-          - type: tile
-            entity: switch.xiaovv_q12_3bb6_switch_status
-            name: Camera Switch
-            layout_options:
-              grid_columns: 4
-              grid_rows: 2
-          - type: tile
-            entity: select.xiaovv_q12_3bb6_detection_sensitivity
-            name: Motion Detection Sensitivity
-            icon: mdi:case-sensitive-alt
-            color: yellow
-            features:
-              - type: select-options
-          - type: tile
-            entity: select.xiaovv_q12_3bb6_recording_mode
-            name: Recording Mode
-            icon: mdi:sd
-            color: red
-            features:
-              - type: select-options
-          - type: tile
-            entity: switch.xiaovv_q12_3bb6_motion_detection
-            name: Motion Detection
-            icon: mdi:motion-sensor
-          - type: tile
-            entity: number.xiaovv_q12_3bb6_alarm_interval
-            name: Motion Alarm Interval
-            icon: mdi:clock-time-eight
-            color: cyan
-          - type: tile
-            entity: sensor.xiaovv_q12_3bb6_status
-            name: Memory Card State
-            icon: mdi:micro-sd
-            color: pink
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - type: tile
-            entity: sensor.xiaovv_q12_3bb6_storage_free_space
-            name: Memory Card Space
-            icon: mdi:sd
-            color: pink
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-          - show_state: true
-            show_name: true
-            camera_view: auto
-            type: picture-entity
-            image: https://demo.home-assistant.io/stub_config/bedroom.png
-            entity: camera.xiaovv_q12_3bb6_camera_control
-            name: Camera Picture
-            camera_image: camera.xiaovv_q12_3bb6_camera_control
-            theme: macOS Theme
-        title: 📷 AI Camera
-        column_span: 1
-      - type: grid
-        cards:
-          - features:
-              - type: cover-open-close
-              - type: cover-position
-            type: tile
-            entity: cover.linp_wd1lb_19aa_window_opener
-            icon: mdi:window-open-variant
-            color: light-blue
-            name: Window Closer
-          - type: tile
-            entity: binary_sensor.xiaomi_pir1_7074_motion_sensor
-            name: PIR Sensor
-            color: brown
-          - type: tile
-            entity: sensor.xiaomi_pir1_7074_illumination_2
-            name: Light Sensor
-            color: blue-grey
-          - type: tile
-            entity: light.xiaomi_wpro2_db24_indicator_light
-            name: Indicator Light
-            color: red
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.xiaomi_wpro2_db24_right_switch_service
-            icon: ''
-            name: Clothes Airer Switch
-            color: green
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - type: tile
-            entity: switch.xiaomi_pro3_4ed4_alarm
-            name: Clothes Airer Alarm
-            layout_options:
-              grid_columns: 2
-              grid_rows: 1
-          - features:
-              - type: cover-open-close
-              - type: cover-position
-            type: tile
-            entity: cover.xiaomi_pro3_4ed4_airer
-            name: Clothes Airer Control
-            layout_options:
-              grid_columns: 4
-              grid_rows: 3
-        title: ☀️ Verandahs
-        column_span: 1
-      - type: grid
-        cards:
-          - type: tile
-            entity: switch.xiaomi_wpro3_97cc_middle_switch_service
-            name: Around Light
-            icon: mdi:ceiling-light-multiple
-            color: green
-          - type: tile
-            entity: binary_sensor.isa_dw2hl_e225_magnet_sensor
-            name: Front Door State
-            color: brown
-          - type: tile
-            entity: sensor.xiaomi_03_8bd4_no_one_duration
-            name: No One Duration
-            icon: mdi:account-multiple-minus
-            color: brown
-          - type: tile
-            entity: sensor.xiaomi_03_8bd4_has_someone_duration
-            name: Has Someone Duration
-            icon: mdi:account-multiple-plus
-            color: brown
-          - type: tile
-            entity: sensor.xiaomi_03_8bd4_occupancy_sensor
-            name: mmWave Sensor State
-            icon: mdi:account-alert
-            color: brown
-          - type: tile
-            entity: sensor.ainice_rd_555d_occupancy_sensor
-            color: brown
-            name: Dual Presence Sensor
-            icon: mdi:account
-          - type: tile
-            entity: sensor.isa_dw2hl_e225_illumination_2
-            name: Light Sensor
-            color: blue-grey
-            icon: mdi:lightbulb-on-30
-          - type: tile
-            entity: sensor.xiaomi_03_8bd4_illumination
-            name: Light Sensor
-            color: blue-grey
-          - type: tile
-            entity: light.xiaomi_wpro3_97cc_indicator_light
-            name: Indicator Light
-            color: red
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-        title: 🚪 Front Door
-        column_span: 1
-      - type: grid
-        cards:
-          - type: tile
-            entity: sensor.xiaomi_lx06_9c00_conversation
-            name: Control Command
-            color: blue-grey
-            show_entity_picture: true
-            vertical: true
-            hide_state: false
-          - type: tile
-            entity: text.xiaomi_lx06_9c00_play_text
-            name: Play Text
-            color: amber
-          - type: tile
-            entity: switch.xiaomi_lx06_9c00_sleep_mode
-            name: Sleep Mode
-            icon: mdi:power-sleep
-            color: brown
-          - type: tile
-            entity: button.xiaomi_lx06_9c00_play_music
-            name: Play Music
-            icon: mdi:speaker
-            color: light-blue
-            show_entity_picture: true
-            vertical: false
-          - type: tile
-            entity: text.xiaomi_lx06_9c00_execute_text_directive
-            name: Execute Text
-            color: amber
-          - type: tile
-            entity: button.xiaomi_lx06_9c00_wake_up
-            name: Wake up
-            icon: ''
-            color: light-green
-          - type: tile
-            entity: button.xiaomi_lx06_9c00_stop_alarm
-            name: Stop Alarm
-            color: disabled
-            show_entity_picture: true
-            icon: mdi:clock-check
-        column_span: 1
-        title: 📢 AI Speaker
-      - type: grid
-        cards:
-          - features:
-              - type: update-actions
-                backup: ask
-            type: tile
-            entity: update.xiaomi_miot_auto_update
-            name: Mi IoT
-            color: teal
-            show_entity_picture: true
-            hide_state: false
-          - type: tile
-            entity: update.home_assistant_operating_system_update
-            name: OS
-            icon: mdi:home-assistant
-            color: red
-            show_entity_picture: true
-            features:
-              - type: update-actions
-                backup: ask
-          - features:
-              - type: update-actions
-                backup: ask
-            type: tile
-            entity: update.home_assistant_supervisor_update
-            icon: mdi:home-assistant
-            name: Supervisor
-            color: red
-            show_entity_picture: true
-          - type: tile
-            entity: update.home_assistant_core_update
-            name: Core
-            icon: mdi:home-assistant
-            color: red
-            show_entity_picture: true
-            features:
-              - type: update-actions
-                backup: ask
-        title: 🎉 Updates
-      - type: grid
-        cards:
+          - type: heading
+            heading: ⚡️ Energy
           - type: tile
             entity: sensor.cuco_v3_04e6_electric_power
             layout_options:
               grid_columns: 4
               grid_rows: 1
             name: 💻 Computer Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_v3_bd89_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: 📱 Charge Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_v3_38e7_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: 💾 NAS Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_v3_55ef_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Dishwashers Plug Real Time Consumption
             color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_04e6_power_cost_today
@@ -1522,41 +1573,12 @@ views:
             name: 💻 Computer Plug Today Cost
             color: light-blue
           - type: tile
-            entity: sensor.cuco_v3_04e6_power_cost_month
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: 💻 Computer Plug Month Cost
-            color: deep-orange
-            icon: ''
-          - type: tile
-            entity: sensor.cuco_v3_bd89_electric_power
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: 📱 Charge Plug Real Time Consumption
-            color: deep-purple
-          - type: tile
             entity: sensor.cuco_v3_bd89_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
             name: 📱 Charge Plug Today Cost
             color: light-blue
-          - type: tile
-            entity: sensor.cuco_v3_bd89_power_cost_month
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: 📱 Charge Plug Month Cost
-            color: deep-orange
-          - type: tile
-            entity: sensor.cuco_v3_38e7_electric_power
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: 💾 NAS Plug Real Time Consumption
-            color: deep-purple
           - type: tile
             entity: sensor.cuco_v3_38e7_power_cost_today
             layout_options:
@@ -1565,6 +1587,28 @@ views:
             name: 💾 NAS Plug Today Cost
             color: light-blue
           - type: tile
+            entity: sensor.cuco_v3_55ef_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            color: light-blue
+            name: Dishwashers Plug Today Cost
+          - type: tile
+            entity: sensor.cuco_v3_04e6_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: 💻 Computer Plug Month Cost
+            color: deep-orange
+            icon: ''
+          - type: tile
+            entity: sensor.cuco_v3_bd89_power_cost_month
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: 📱 Charge Plug Month Cost
+            color: deep-orange
+          - type: tile
             entity: sensor.cuco_v3_38e7_power_cost_month
             layout_options:
               grid_columns: 4
@@ -1572,26 +1616,19 @@ views:
             name: 💾 NAS Plug Month Cost
             color: deep-orange
           - type: tile
-            entity: sensor.cuco_v3_55ef_electric_power
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: Dehumidifier Plug Real Time Consumption
-            color: deep-purple
-          - type: tile
-            entity: sensor.cuco_v3_55ef_power_cost_today
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            color: light-blue
-            name: Dehumidifier Plug Today Cost
-          - type: tile
             entity: sensor.cuco_v3_55ef_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
-            name: Dehumidifier Plug Month Cost
+            name: Dishwashers Plug Month Cost
             color: deep-orange
+        column_span: 4
+      - type: grid
+        cards:
+          - type: heading
+            icon: ''
+            heading: ' '
+            heading_style: title
           - type: tile
             entity: sensor.cuco_v3_e487_electric_power
             layout_options:
@@ -1600,11 +1637,53 @@ views:
             name: WiFi Plug Real Time Consumption
             color: deep-purple
           - type: tile
+            entity: sensor.lumi_mcn02_3527_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Air Conditioner Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_v3_6a98_electric_power
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Dehumidifiers Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_cp2d_72e0_electric_power_2
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            color: purple
+            name: Water Heater Plug Real Time Consumption
+          - type: tile
             entity: sensor.cuco_v3_e487_power_cost_today
             layout_options:
               grid_columns: 4
               grid_rows: 1
             name: WiFi Plug Today Cost
+            color: light-blue
+          - type: tile
+            entity: sensor.lumi_mcn02_3527_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Air Conditioner Plug Today Cost
+            color: light-blue
+          - type: tile
+            entity: sensor.cuco_v3_6a98_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Dehumidifiers Plug Today Cost
+            color: light-blue
+          - type: tile
+            entity: sensor.cuco_cp2d_72e0_power_cost_today
+            layout_options:
+              grid_columns: 4
+              grid_rows: 1
+            name: Water Heater Plug Today Cost
             color: light-blue
           - type: tile
             entity: sensor.cuco_v3_e487_power_cost_month
@@ -1614,20 +1693,6 @@ views:
             name: WiFi Plug Month Cost
             color: deep-orange
           - type: tile
-            entity: sensor.lumi_mcn02_3527_electric_power
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: Air Conditioner Plug Real Time Consumption
-            color: deep-purple
-          - type: tile
-            entity: sensor.lumi_mcn02_3527_power_cost_today
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: Air Conditioner Plug Today Cost
-            color: light-blue
-          - type: tile
             entity: sensor.lumi_mcn02_3527_power_cost_month
             layout_options:
               grid_columns: 4
@@ -1635,40 +1700,12 @@ views:
             name: Air Conditioner Plug Month Cost
             color: deep-orange
           - type: tile
-            entity: sensor.cuco_v3_6a98_electric_power
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: Refrigerator Plug Real Time Consumption
-            color: deep-purple
-          - type: tile
-            entity: sensor.cuco_v3_6a98_power_cost_today
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: Refrigerator Plug Today Cost
-            color: light-blue
-          - type: tile
             entity: sensor.cuco_v3_6a98_power_cost_month
             layout_options:
               grid_columns: 4
               grid_rows: 1
-            name: Refrigerator Plug Month Cost
+            name: Dehumidifiers Plug Month Cost
             color: deep-orange
-          - type: tile
-            entity: sensor.cuco_cp2d_72e0_electric_power_2
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            color: purple
-            name: Water Heater Plug Real Time Consumption
-          - type: tile
-            entity: sensor.cuco_cp2d_72e0_power_cost_today
-            layout_options:
-              grid_columns: 4
-              grid_rows: 1
-            name: Water Heater Plug Today Cost
-            color: light-blue
           - type: tile
             entity: sensor.cuco_cp2d_72e0_power_cost_month
             layout_options:
@@ -1676,6 +1713,81 @@ views:
               grid_rows: 1
             name: Water Heater Plug Month Cost
             color: deep-orange
+        column_span: 4
+      - type: grid
+        cards:
+          - type: heading
+            icon: ''
+            heading_style: title
+          - type: tile
+            entity: sensor.cuco_v3_4b8b_electric_power
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Bedroom Mosquito Coil Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_v3_6d89_electric_power
+            name: Drawing Room Mosquito Coil Plug Real Time Consumption
+            grid_options:
+              columns: 12
+              rows: 1
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_cp2d_78b6_electric_power
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Refrigerator Plug Real Time Consumption
+            color: deep-purple
+          - type: tile
+            entity: sensor.cuco_v3_4b8b_power_cost_today
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Bedroom Mosquito Coil Plug Today Cost
+            color: blue
+          - type: tile
+            entity: sensor.cuco_v3_6d89_power_cost_today
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Drawing Room Mosquito Coil Plug Today Cost
+            color: blue
+          - type: tile
+            entity: sensor.cuco_cp2d_78b6_power_cost_today
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Refrigerator Plug Today Cost
+            color: blue
+          - type: tile
+            entity: sensor.cuco_v3_4b8b_power_cost_month
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Bedroom Mosquito Coil Plug Month Cost
+            color: deep-orange
+          - type: tile
+            entity: sensor.cuco_v3_6d89_power_cost_month
+            name: Drawing Room Mosquito Coil Plug Month Cost
+            grid_options:
+              columns: 12
+              rows: 1
+            color: deep-orange
+          - type: tile
+            entity: sensor.cuco_cp2d_78b6_power_cost_month
+            grid_options:
+              columns: 12
+              rows: 1
+            name: Refrigerator Plug Month Cost
+            color: deep-orange
+        column_span: 3
+      - type: grid
+        cards:
+          - type: heading
+            icon: ''
+            heading_style: title
           - type: tile
             entity: sensor.xiaomi_pir1_abb0_battery_level
             layout_options:
@@ -1736,27 +1848,75 @@ views:
               grid_columns: 4
               grid_rows: 1
             name: Window Closer Battery Level
+        column_span: 4
+      - type: grid
+        cards:
+          - type: heading
+            heading_style: title
           - type: tile
             entity: sensor.linp_wd1lb_19aa_charging_state
             name: Window Opener Charging State
             icon: mdi:battery-charging-wireless
             color: dark-grey
-            layout_options:
-              grid_columns: 6
-              grid_rows: 1
+            grid_options:
+              columns: 24
+              rows: 1
           - type: tile
             entity: sensor.lumi_hmcn02_28d5_charging_state
             color: dark-grey
             icon: mdi:battery-charging-wireless
             name: Curtain Charging State
-            layout_options:
-              grid_columns: 6
-              grid_rows: 1
-        title: ⚡️ Energy
+            grid_options:
+              columns: 24
+              rows: 1
         column_span: 4
-    badges:
-      - type: entity
-        show_name: false
-        show_state: true
-        show_icon: true
-        entity: sensor.sun_next_dawn
+    icon: mdi:home-battery
+    theme: macOS Theme
+    cards: []
+  - type: sections
+    max_columns: 4
+    title: Update
+    path: update
+    icon: mdi:update
+    theme: macOS Theme
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: 🎉 Updates
+          - features:
+              - type: update-actions
+                backup: ask
+            type: tile
+            entity: update.xiaomi_miot_auto_update
+            name: Mi IoT
+            color: teal
+            show_entity_picture: true
+            hide_state: false
+          - type: tile
+            entity: update.home_assistant_operating_system_update
+            name: OS
+            icon: mdi:home-assistant
+            color: red
+            show_entity_picture: true
+            features:
+              - type: update-actions
+                backup: ask
+          - features:
+              - type: update-actions
+                backup: ask
+            type: tile
+            entity: update.home_assistant_supervisor_update
+            icon: mdi:home-assistant
+            name: Supervisor
+            color: red
+            show_entity_picture: true
+          - type: tile
+            entity: update.home_assistant_core_update
+            name: Core
+            icon: mdi:home-assistant
+            color: red
+            show_entity_picture: true
+            features:
+              - type: update-actions
+                backup: ask
